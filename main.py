@@ -11,9 +11,9 @@ MORSE_ALPHABET = {'A': '· −', 'B': '−···', 'C': '−·−·', 'D': '−�
                   'Ł': '·−··−', 'Ń': '−−·−−', 'Ó': '−−−·', 'Ś': '···−···', 'Ź': '−−··−·', 'Ż': '−−··−'}
 
 
-text_to_convert = input('Write Your text to convert it to Morse Code: ').upper().replace(' ','')
+text_to_convert = input('Write Your text to convert it to Morse Code: ').upper()
 text_list = [char for char in text_to_convert]
 morse_text = []
 for i in text_list:
     morse_text.append(MORSE_ALPHABET[i])
-print(f'Text in Morse alphabet is: {morse_text}')
+print(f'Text in Morse alphabet is: {"    ".join(morse_text)}')
